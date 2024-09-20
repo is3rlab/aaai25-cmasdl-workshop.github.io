@@ -1,0 +1,938 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+<title>Cooperative Multi-Agent Systems Decision-making and Learning: From Individual Needs to Swarm Intelligence</title>
+<meta name="description" content="">
+<meta name="author" content="WebThemez">
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+<link rel="shortcut icon" href="images/ct.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="flexslider/flexslider.css" rel="stylesheet" />
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<!-- Font Awesome -->
+<link href="font/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+    table {
+      border-collapse: separate;
+      border-spacing: 20px 0;
+    }
+
+    td {
+      padding: 5px;
+    }
+</style>
+	
+<style>
+    .collapsible {
+      background-color: white;
+      color: maroon;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+    }
+
+    .collapsible:hover {
+      background-color: rgb(240, 240, 240);
+    }
+
+    .collapsible:after {
+      content: '\002B';
+      color: black;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      margin-right: 15px;
+    }
+
+    .left-col {
+      width: 15%;
+    }
+
+    .collapsible.active::after {
+      content: "\2212";
+    }
+
+    .hidden-content {
+      padding: 0 5px;
+      overflow: hidden;
+      background-color: white;
+      max-height: 0;
+      line-height: 115%;
+      transition: max-height 0.2s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i>Cooperative Multi-Agent Systems Decision-making and Learning</i></b></a> </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="mainNav">
+          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
+          <li><a href="#aboutUs" class="scroll-link">About</a></li>
+	  <li><a href="#services" class="scroll-link">Speakers</a></li>
+          <li><a href="#plans" class="scroll-link">Program</a></li>
+          <li><a href="#work" class="scroll-link">Contributions</a></li>
+          <li><a href="#team" class="scroll-link">Organizers</a></li>
+          <li><a href="#contactUs" class="scroll-link">Submission</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse--> 
+    </nav>
+    <!--/.navbar--> 
+  </div>
+  <!--/.container--> 
+</header>
+<!--/.header-->
+<div id="#top"></div>
+<section id="home">
+  <div class="banner-container"> 
+  <!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="images/slides/0.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Invited Speakers</h3> 
+					<p>Intrinsically motivated AI agent modeling in MAS</p>  
+                </div>
+              </li>
+	      <li>
+                <img src="images/slides/3.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Workshop On Site</h3> 
+					<p>Game-theoretic approaches and Cognitive Computing in Cooperative MAS</p>  
+                </div>
+              </li>
+	      <li>
+                <img src="images/slides/1.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Oral Presentations</h3> 
+					<p>Multi-Aegnt Interaction</p>  
+                </div>
+              </li>
+              <li>
+                <img src="images/slides/2.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Poster Presentations</h3> 
+					<p>Multi-Agennt Coginitve Modeling and Human-Robot Cognitive Fusion</p>  
+                </div>
+              </li>
+              
+<!-- 	      <li>
+                <img src="images/slides/4.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Self-Adaptive MAS in Cooperation</h3> 
+					<p>Efficient planning and learning adapting group members to achieve team goals</p>  
+                </div>
+              </li>
+	      <li>
+                <img src="images/slides/5.png" alt="" />
+                <div class="flex-caption">
+                    <h3>Innate-values-driven behaviors</h3> 
+					<p>Cognitive models in swarm intelligence and robotics</p>  
+                </div>
+              </li> -->
+            </ul>
+        </div>
+	<!-- end slider -->
+  </div>
+  <div class="container hero-text2">
+  <h3>AAAI 2024 Full-Day Workshop <br /> Cooperative Multi-Agent Systems Decision-making and Learning: <br />From Individual Needs to Swarm Intelligence 
+	  <br />Vancouver Convention Centre, Vancouver, BC, Canada, Feb. 26, 2024
+	  <br />[This workshop will be held in person]<br />[AAAI 2024 registration (workshop-only) is required]</h3>
+  </div>
+</section>
+	
+<section id="aboutUs">
+  <div class="container">
+    <div class="heading text-center"> 
+      <!-- Heading -->
+      <h2>About</h2>
+    </div>
+	  <p style="font-size: 20px;">With the tremendous growth of AI technology, Robotics, IoT, and high-speed wireless sensor networks (like 5G) in recent years, it gradually forms an artificial ecosystem 
+	 termed artificial social systems that involves entire AI agents from software entities to hardware devices. How to integrate artificial social systems into human society 
+	 and coexist harmoniously is a critical issue for the sustainable development of human beings. At this point, rational decision-making and efficient learning from multi-agent 
+	 systems (MAS) interaction are the preconditions to guarantee multi-agent working in safety, balance the group utilities and system costs in the long term, and satisfy group 
+	 members' needs in their cooperation. </p>
+	  <p style="font-size: 20px;">The main interest of this workshop is the technique of modeling cooperative MAS decision-making and learning from the cognitive modeling perspective. It aims to 
+	     bring researchers in different communities together to present their research, discuss future research directions, and cross-fertilize the different communities. Researchers and practitioners 
+	     whose research might apply to cooperative MAS decision-making and learning or who might be able to use those techniques in their research are welcome. The workshop will consist 
+	     of invited speakers, presentations from researchers with original research papers, and poster sessions. We hope that through our multi-faceted workshop and the talks of our expert 
+	     speakers, we can attract the interest of the AI and robotics community in research challenges specific to cooperative MAS decision-making and learning.</p>
+    <div class="row feature design">
+      <div class="area1 columns right">
+        <h3>Topics</h3>
+        <p style="font-size: 20px;">We solicit contributions from topics including but not limited to:</p>
+	<ul>
+		<li style="font-size: 18px;">MAS cognitive modeling</li>
+		<li style="font-size: 18px;">Intrinsically motivated AI agent modeling in MAS</li>
+		<li style="font-size: 18px;">Innate-values-driven reinforcement learning</li>
+		<li style="font-size: 18px;">MAS deep reinforcement learning</li>
+		<li style="font-size: 18px;">Multi-Object MAS decision-making and learning</li>
+		<li style="font-size: 18px;">Adaptive learning with social rewards</li>
+		<li style="font-size: 18px;">Cognitive models in swarm intelligence and robotics</li>
+		<li style="font-size: 18px;">Game-theoretic approaches in MAS decision-making</li>
+		<li style="font-size: 18px;">Consensus in MAS collaboration</li>
+		<li style="font-size: 18px;">Trust based MAS decision-making and learning</li>
+		<li style="font-size: 18px;">Trustworthy AI agents in Human-robot interaction</li>
+		<li style="font-size: 18px;">Cognitive model application in intelligent social systems</li>
+	</ul>
+      </div>
+      <div class="area2 columns feature-media left"> 
+	<div class="topic-img">
+		<img src="images/thinker.png" alt="" width="100%"> 
+	</div>
+      </div>
+    </div>
+    <div class="row dataTxt">	
+<!-- 						<div class="col-md-6 col-sm-6"> -->
+						<div class="col-md-6">
+							<h4>Workshop Video: Part 1 (9:00 am -- 12:30 pm)</h4>
+							<div class="iframe_container"><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/-pVmsgo-RNU?si=4C8zLdZYwkhgirZs" 
+											frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+							
+<!-- 							<p style="font-size: 18px;">This workshop is part of <a href="https://aaai.org/aaai-conference/aaai-24-workshop-list/#ws13" target="blank">the Thirty-Eight AAAI Conference on Artificial Intelligence (AAAI-24)</a>.
+								Virtual attendance will be available to every audience who has registered for the workshop. </p> -->
+						</div>
+						
+<!-- 						<div class="col-md-6 col-sm-6"> -->
+						<div class="col-md-6">	
+							<h4>Workshop Video: Part 2 (2:00 pm -- 17:30 pm)</h4>
+							<div class="iframe_container"><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/OZmbGpl2ypw?si=cuj-6hez_Bm5areB" 
+											frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+							
+<!-- 							<p style="font-size: 18px;">Submission Link: <a href="https://easychair.org/conferences/?conf=aaai2024cmasdlworksh" target="blank">https://easychair.org/conferences/?conf=aaai2024cmasdlworksh</a></p>
+                            				<ul class="listArrow">
+								<li style="color:#0000FF; font-size: 18px;">Submission Deadline: 30 Nov. 2023</li>
+								<li style="color:#0000FF; font-size: 18px;">Author Notification Date: 16 Dec. 2023</li>
+								<li style="color:#0000FF; font-size: 18px;">Camera Ready Date: 15 Jan. 2024</li>
+								<li style="color:#FF0000; font-size: 18px;">Workshop Date: 26 Feb. 2024</li>
+							</ul> -->
+							</div>
+						
+<!-- 						<div class="col-md-4 col-sm-6">
+							<h4>Publication Opportunities:</h4>
+							<p style="font-size: 18px;">
+								Acceptance papers will be made publicly available on the workshop website. 
+								These non-archival papers and their corresponding posters will also remain available on this website after the workshop. The authors will retain copyright of their papers.
+								Selected high-quality papers from the workshop will provide the opportunity to adapt or expand into a book chapter publishing in <a href="https://www.nowpublishers.com" target="blank">NowPublishers</a> according to authors' needs and agreement.
+							</p>
+						</div> -->
+						
+					</div>
+  </div>
+</section>
+<section id="clients">
+  <div id="demo" class="clients">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Sponsors</h2>
+<!-- 	<p style="font-size: 20px;">TBA </p> -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="customNavigation"> <a class="prev"><i class="fa fa-chevron-circle-left"></i></a> <a class="next"><i class="fa fa-chevron-circle-right"></i></a> </div>
+          <div id="owl-demo" class="owl-carousel">		  
+            <div class="item"> <span class="helper"> <img src="images/clients/now-publishers.png" alt="client" /></span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>	
+
+<section id="services" class="page-section colord">
+  <div class="container">
+    <div class="heading text-center">
+      <h2 style="color: white;">Invited Speakers</h2>
+    </div>
+    <div class="row"> 
+	    
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/mg.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://www-users.cse.umn.edu/~gini/" target="blank">Maria Gini</a></h3>
+            <!-- Designation --> 
+	    <p>EIF RAS, IEEE Fellow,<br />University of Minnesota</p>
+        </div>
+      </div>
+      <!-- end: --> 
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/ml.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://www.littmania.com/" target="blank">Michael L. Littman</a></h3>
+            <!-- Designation --> 
+	    <p>AAAI/AAAS/ACM Fellow, <br />Brown University</p>
+        </div>
+      </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/kb.jpg" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://www.cs.ubc.ca/~kevinlb/" target="blank">Kevin Leyton-Brown</a></h3>
+            <!-- Designation --> 
+	    <p>AAAI/ACM/RSC Fellow, <br />University of British Columbia</p>
+        </div>
+      </div>
+      <!-- end: --> 
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/mp.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://web.stanford.edu/~pavone/" target="blank">Marco Pavone</a></h3>
+            <!-- Designation --> 
+	    <p>Director of Autonomous Systems Lab,<br />Stanford University</p>
+        </div>
+      </div>
+      <!-- end: --> 
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/sk.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://viterbi.usc.edu/directory/faculty/Koenig/Sven" target="blank">Sven Koenig</a></h3>
+            <!-- Designation --> 
+	    <p>AAAI Fellow, the Association of ACM/IEEE/AAAS <br />University of Southern California</p>
+        </div>
+      </div>
+      <!-- end: -->
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/ac.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://mila.quebec/en/person/aaron-courville/" target="blank">Aaron Courville</a></h3>
+            <!-- Designation --> 
+	    <p>CIFAR Fellow and Chair,<br />Université de Montréal</p>
+        </div>
+      </div>
+      <!-- end: -->
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/gb.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h3><a href="https://www.polymtl.ca/expertises/en/beltrame-giovanni" target="blank">Giovanni Beltrame</a></h3>
+            <!-- Designation --> 
+	    <p>Director of Making Innovative Space Technology Lab,<br />Polytechnique Montreal</p>
+        </div>
+      </div>
+      <!-- end: -->
+
+      <!-- item -->
+      <div class="col-md-3 col-sm-6 col-xs-6 text-center"> 
+	<div class="team-member pDark"> 
+            <div class="member-img"> 
+              <img class="img-responsive" src="images/ca.png" alt="" /> </div>
+            <h3><a href="https://www.khoury.northeastern.edu/home/camato/" target="blank">Christopher Amato</a></h3>
+	    <p>Director of Lab for Learning and Planning in Robotics,<br />Northeastern University</p>
+        </div>
+      </div>
+      <!-- end: -->
+	    
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+
+<section id="plans" class="page-section">
+  <div class="container">
+    <div class="heading text-center"> 
+      <!-- Heading -->
+      <h2>Workshop Schedule</h2>
+<!--       <p style="font-size: 20px;">TBA </p>
+    </div> -->
+
+    <div class="row mt-0">
+        <font size="4" face="Helvetica">
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td class="left-col" style="color:navy"></td> <br>
+                <td style="color:maroon">All times in PST (GMT-8), Feb. 26, 2024</td>
+              </tr>
+              <tr>
+                <td class="left-col" style="color:navy">9:00a</td> <br>
+                <td style="color:navy">Welcome Remarks: Matthew E. Taylor (University of Alberta)</td>
+              </tr>
+              <tr>
+                <td class="left-col" style="color:navy">9:10a</td>
+                <td style="color:navy">Invited Session 1</td>
+              </tr>
+              <tr>
+                <td style="color:maroon">9:10-9:40a</td>
+                <td>
+                  <div class="collapsible">Maria Gini (University of Minnesota) - Topic: What would you do if you had 10, 1000, or 10000 robots?</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        If you had robots to do tasks, how many robots would you use? Does the answer depend on the tasks? Are the tasks independent of each other, so they can be done in parallel with no coordination,
+			or must some tasks be completed before others? Do the robots need a central controller to coordinate their work, or can each robot work independently? Who will decide which robot does what task? These are
+			central research questions that I will address in the talk.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:maroon">9:40-10:10a</td>
+                <td>
+                  <div class="collapsible">Aaron Courville (Université de Montréal) - Topic: Q-value Shaping</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        In various real-world scenarios, interactions among agents often resemble the dynamics of general-sum games, 
+		        where each agent strives to optimize its own utility. Despite the ubiquitous relevance of such settings, 
+		        decentralized machine learning algorithms have struggled to find equilibria that maximize individual utility 
+			while preserving social welfare. In this talk I will discuss our latest efforts in this direction by introducing Q-value Shaping, 
+			a novel decentralized RL algorithm tailored to optimizing an agent's individual utility while fostering cooperation among adversaries in partially competitive environments. 
+			we assume that during training, the opponent samples actions proportionally to their action-value function Q and we further assume that the agent has access to this Q function. 
+			Experimental results demonstrate the effectiveness of our approach at achieving state-of-the-art performance in benchmark scenarios such as the Iterated Prisoner's Dilemma 
+			and the Coin Game. We believe this method to be an important step toward training agent for practical multi-agent applications.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>10:10-10:15a</td>
+                <td>Q/A and Discussion for Invited Session 1</td>
+              </tr>
+              <tr>
+                <td style="color:green">10:15a</td>
+                <td>
+                  <div class="collapsible" style="color:green">Contributed Papers - Oral Presentations</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <font style="color:navy">10:15-10:27a</font> --- Communicating Unexpectedness for Out-of-Distribution Multi-Agent Reinforcement Learning <br>
+                      <font style="color:navy">10:27-10:39a</font> --- Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment <br>
+                      <font style="color:navy">10:39-10:51a</font> --- Bayesian Soft Actor-Critic: A Directed Acyclic Strategy Graph Based Deep Reinforcement Learning <br>
+                      <font style="color:navy">10:51-11:03a</font> --- Learning Communication Policies for Different Follower Behaviors in a Collaborative Reference Game <br>
+                      <font style="color:navy">11:03-11:15a</font> --- Developing a Unified Training Framework for Multi-agent Imperfect-information Games: a Case Study of Mahjong and Bridge <br>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:navy">11:15a</td>
+                <td style="color:navy">Invited Session 2</td>
+              </tr>
+              <tr>
+                <td style="color:maroon">11:15-11:45a</td>
+                <td>
+                  <div class="collapsible">Giovanni Beltrame (Polytechnique Montreal) - Topic: The role of hierarchy in multi-agent decision making</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        The emerging behaviors of swarms have fascinated scientists and gathered significant interest in the field of robotics. 
+			While most robot swarms seen in literature are egalitarian (i.e. all robots have identical roles and capabilities), recent evidence suggest that 
+			introducing hierarchy (i.e. some robots act as local decision makers) is essential to successfully deploy robot swarms in a wider range of practical applications. 
+			While their abundance in nature hints that hierarchies may have certain advantages over egalitarian swarms, the conditions favoring hierarchies have not been empirically 
+			demonstrated. We show evidence that egalitarian swarms perform well in environments that are comparable in size to the collective sensing capability of the swarm, 
+			but will eventually fail as environments become larger or more complex. We show how hierarchies extend overall sensing capability of the swarm in a resource-effective manner, 
+			succeeding in larger and less structured environments with fewer resources.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:maroon">11:45-12:15p</td>
+                <td>
+                  <div class="collapsible">Michael L. Littman (Brown University) - Topic: Interacting Agents and Safe(r) AI </div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        RL plays an important role in creating modern chatbots. This talk explores how some
+			of the current shortcomings in chatbot creation can be mitigated by taking a multiagent perspective
+			and proposes that considerably more human feedback is needed to create chatbots that would
+			generally be seen as "safe" and reliable.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>12:15-12:20p</td>
+                <td>Q/A and Discussion for Invited Session 2</td>
+              </tr>
+              <tr>
+	        <td style="color:navy">12:20p</td>
+	        <td style="color:navy">Break</td>
+	      </tr>
+              <tr>
+                <td style="color:green">2:00p</td>
+		<td>
+                  <div class="collapsible" style="color:green">Contributed Papers - Poster Session I</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <font style="color:navy">2:00-2:05p</font> --- Cognitive Multi-agent Q-Learning for Cooperation in Competitive Environments <br>
+                      <font style="color:navy">2:05-2:10p</font> --- SocialGFs: Learning Social Gradient Fields for Multi-Agent Reinforcement Learning <br>
+                      <font style="color:navy">2:10-2:15p</font> --- Innate-Values-driven Reinforcement Learning for Cooperative Multi-Agent Systems <br>
+                      <font style="color:navy">2:15-2:20p</font> --- Bridging Agent Dynamics and Population Behaviors: Scalable Learning for Mean Field Games on Graph via Neural Operators <br>
+                      <font style="color:navy">2:20-2:25p</font> --- Edge Computing based Human-Robot Cognitive Fusion: A Medical Case Study in the Autism Spectrum Disorder Therapy <br>
+		      <font style="color:navy">2:25-2:30p</font> --- Q/A     
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:navy">2:30p</td>
+                <td style="color:navy">Invited Session 3</td>
+              </tr>
+              <tr>
+                <td style="color:maroon">2:30-3:00p</td>
+                <td>
+                  <div class="collapsible">Sven Koenig (USC) - Topic: Multi-Agent Pathfinding and Its Applications</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        The coordination of robots and other agents is becoming increasingly important for industry. For example, on the order of one thousand robots navigate autonomously 
+			in Amazon fulfillment centers to move inventory pods all the way from their storage locations to the picking stations that need the products they store (and vice versa). 
+			Optimal and, in some cases, even approximately optimal path planning for these robots is NP-hard, yet one must find high-quality collision-free paths for them in real-time. 
+			Algorithms for such multi-agent path-finding problems had been studied in robotics and theoretical computer science for a long time but were insufficient since they are either 
+			fast but result in insufficient solution quality or result in good solution quality but are too slow. In this talk, I will discuss different variants of multi-agent path-finding 
+			problems and cool ideas for both solving them (in centralized and decentralized ways) and executing the resulting plans robustly. I will also discuss several applications of 
+			the technology (funded by NSF and Amazon Robotics), including warehousing, manufacturing, and train scheduling.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:maroon">3:00-3:30p</td>
+                <td>
+                  <div class="collapsible">Christopher Amato (Northeastern University) - Topic: Correcting Some Misconceptions about MARL</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        Multi-agent reinforcement learning (MARL) has exploded in popularity but there is a lack of understanding of when current methods work and what is the best way to learn in multi-agent settings. 
+			This talk will include some of the fundamental challenges and misunderstandings of multi-agent reinforcement learning. In particular, it will discuss how 1) centralized critics are not strictly 
+			better than decentralized critics in MARL (and can be worse), and 2) state-based critics are unsound and work well only in fully-observable multi-agent problems. Furthermore, it will discuss 
+			related methods in value-based MARL. 
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3:30-3:35p</td>
+                <td>Q/A and Discussion for Invited Session 3</td>
+              </tr>
+              <!--tr>
+              <td style="color:navy">3:35p</td>
+              <td style="color:navy">Coffee Break</td>
+            </tr-->
+	      <tr>
+                <td style="color:green">3:35p</td>
+                <td>
+                  <div class="collapsible" style="color:green">Contributed Papers - Poster Session II</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <font style="color:navy">3:35-3:40p</font> --- User Models and Bayesian Decision-Making for Human-in-the-Loop Problems <br>
+                      <font style="color:navy">3:40-3:45p</font> --- Multi-Robot Cooperative Navigation in Crowds: A Game-Theoretic Learning-Based Model Predictive Control Approach <br>
+                      <font style="color:navy">3:45-3:50p</font> --- Exploratory Training: When Annotators Learn About Data <br>
+                      <font style="color:navy">3:50-3:55p</font> --- Exploiting Relational Planning and Task-Specific Abstractions for Multiagent Reinforcement Learning in Relational Domains <br>
+		      <font style="color:navy">3:55-4:00p</font> --- Q/A     
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:navy">4:00p</td>
+                <td style="color:navy">Invited Session 4</td>
+              </tr>
+              <tr>
+                <td style="color:maroon">4:00-4:30p</td>
+                <td>
+                  <div class="collapsible">Marco Pavone (Stanford University) - Topic: Artificial Currency Based Government Welfare Programs: From Optimal Design to Audit Games</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        Artificial currencies have grown in prominence in many real-world resource allocation settings, helping alleviate fairness and equity concerns of traditional monetary mechanisms 
+			that often favor users with higher incomes. In particular, artificial currencies have gained traction in government welfare programs that support eligible users in the population, 
+			e.g., transit benefits programs provide eligible users with subsidized public transit. While such artificial currency based welfare programs are typically well-intentioned and offer 
+			immense potential in improving the outcomes for the eligible group of users, the deployment of many such programs in practice is nascent; hence, the efficacy and optimal design of such 
+			programs still needs to be formalized. Moreover, such programs are susceptible to several fraud mechanisms, with a notable concern being misreporting fraud, wherein users can misreport 
+			their private attributes to gain access to more artificial currency (credits) than they are entitled to. 
+			This talk introduces models and methods to study the equilibrium outcomes and the optimal design of such artificial currency based welfare programs to achieve particular societal objectives 
+			of an administrator running the benefits program. Moreover, to address the issue of misreporting fraud, we propose a natural audit game, wherein the administrator can audit users at some cost 
+			and levy fines against them for misreporting information. Methodologically, we propose a bi-level optimization framework to optimally design artificial currency based welfare mechanisms and 
+			develop convex and linear programming approaches to compute the associated equilibrium outcomes. Finally, to highlight the practical viability of our proposed methods, we present case studies 
+			in the context of two welfare programs: (i) San Mateo County’s Community Transport Benefits Program, wherein users are provided with travel credits to offset some of their payments for using 
+			tolled express lanes on highways, and (ii) Washington D.C.’s federal transit benefits programs that provide subsidized public transit to federal employees.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:maroon">4:30-5:10p</td>
+                <td>
+                  <div class="collapsible">Kevin Leyton-Brown (UBC) - Topic: Modeling Nonstrategic Human Play in Games</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="">Abstract:</font>
+                      </b>
+                        It is common to assume that players in a game will adopt Nash equilibrium strategies. 
+			However, experimental studies have demonstrated that Nash equilibrium is often a poor description of human players' behavior, 
+			even in unrepeated normal-form games. Nevertheless, human behavior in such settings is far from random. Drawing on data from real human play, 
+			the field of behavioral game theory has developed a variety of models that aim to capture these patterns.
+			This talk will survey over a decade of work on this topic, built around the core idea of treating behavioral game theory as a machine learning problem. 
+			It will touch on questions such as:
+				- Which human biases are most important to model in single-shot game theoretic settings?
+				- What loss function should be used to evaluate and fit behavioral models?
+				- What can be learned about examining the parameters of these models?
+				- How can richer models of nonstrategic play be leveraged to improve models of strategic agents?
+				- When does a description of nonstrategic behavior "cross the line" and deserve to be called strategic?
+				- How can advances in deep learning be used to yield stronger--albeit harder to interpret--models?
+			Finally, there has been much recent excitement about large language models such as GPT-4. 
+			Time permitting, the talk will conclude by describing how the economic rationality of such models can be assessed and 
+			presenting some initial experimental findings showing the extent to which these models replicate human-like cognitive biases.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5:10-5:15p</td>
+                <td>Q/A and Discussion for Invited Session 4</td>
+              </tr>
+              <tr>
+                <td style="color:navy">5:15-5:20p</td>
+                <td style="color:navy">Concluding Remarks</td>
+              </tr>
+            </tbody>
+          </table>
+        </font>
+
+      </div>
+	  
+  </div>
+</section>
+	
+<section id="work" class="page-section page">
+  <div class="container text-center">
+    <div class="heading">
+      <h2>Contributions</h2>
+    </div>
+
+  <h3 style="color:yellow"> Oral Presentation</h3>
+      <font size="4" face="Helvetica">
+	<br>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td>[#12]</td>
+              <td style="color:aqua" align="left">Communicating Unexpectedness for Out-of-Distribution Multi-Agent Reinforcement Learning, <br> <em style="color:thistle" align="left">Min Whoo Lee, Kibeom Kim, Soo Wung Shin, Minsu Lee and Byoung-Tak Zhang</em><br> 
+		      <a href="https://drive.google.com/file/d/1N023mB3nIk4ZWKDMQS9foMAlMHB-UPMs/view?usp=drive_link" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/12zLGa6pZ2ECdvAgd3f_b6z8BQlbara94/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#3]</td>
+              <td style="color:aqua" align="left">Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment, <br> <em style="color:thistle" align="left">Devansh Jalota, Kiril Solovey, Matthew Tsao, Stephen Zoepf and Marco Pavone</em><br> 
+		      <a href="https://drive.google.com/file/d/1zOoMUDkT3U4_jKgJTgXFWGWgsDHMwoa3/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1VrzrPgXuVTrpudnhxuDrbq4zFfy5e28N/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+              </td>
+            </tr>
+            <tr>
+              <td>[#5]</td>
+              <td style="color:aqua" align="left">Bayesian Soft Actor-Critic: A Directed Acyclic Strategy Graph Based Deep Reinforcement Learning, <br> <em style="color:thistle" align="left">Qin Yang and Ramviyas Parasuraman</em><br> 
+		      <a href="https://drive.google.com/file/d/1XqxA8FK_GnSkUfkqVNn8Lw0lA_-Sviw_/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1FnNPJE-QfRpAnghDkoiXsGxr7jXj_XXo/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+              </td>
+            </tr>
+            <tr>
+              <td>[#8]</td>
+              <td style="color:aqua" align="left">Learning Communication Policies for Different Follower Behaviors in a Collaborative Reference Game, <br> <em style="color:thistle" align="left">Philipp Sadler, Sherzod Hakimov and David Schlangen</em><br> 
+		      <a href="https://drive.google.com/file/d/1h5VrV1OBqrTsrKZLnuZfEadcKm_qHRh0/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1ipaGsVoabwp0oQ8QZcFcNtrwU6wZG8ji/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#11]</td>
+              <td style="color:aqua" align="left">Developing a Unified Training Framework for Multi-agent Imperfect-information Games: a Case Study of Mahjong and Bridge, <br> <em style="color:thistle" align="left">Zhilei Fan, Wengang Zhou and Houqiang Li</em><br> 
+		      <a href="https://drive.google.com/file/d/1RowC9eejyD4esrKovXkIfwtTRTruZdcK/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1fwGY1jcMPhrTymwLGjYYce2itcF0QPTG/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+          </tbody>
+        </table>
+      </font>
+	  
+      <br>
+	  
+  <h3 style="color:yellow"> Posters</h3>
+      <font size="4" face="Helvetica">
+	<br>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td>[#14]</td>
+              <td style="color:aqua" align="left">Cognitive Multi-agent Q-Learning for Cooperation in Competitive Environments, <br> <em style="color:thistle" align="left">Duy Nhat Phan, Patrick Hytla, Andrew Rice and Thuy Ngoc Nguyen</em><br> 
+		      <a href="https://drive.google.com/file/d/19c9z4hcj9mjeMunRk5qTTNc7YrgpWHtW/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1VF2a8gPP6TU9CZ9UMDRwOaqlfd-oU0d3/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#4]</td>
+              <td style="color:aqua" align="left">SocialGFs: Learning Social Gradient Fields for Multi-Agent Reinforcement Learning, <br> <em style="color:thistle" align="left">Qian Long, Fangwei Zhong, Mingdong Wu, Yizhou Wang and Song-Chun Zhu</em><br> 
+		      <a href="https://drive.google.com/file/d/18MTVr8_vGrTrNStbF7GsoluVW-tWzuWQ/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1qZZsLE9ZBE0eITmrH6WcS-aIomOZhCeb/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#9]</td>
+              <td style="color:aqua" align="left">Bridging Agent Dynamics and Population Behaviors: Scalable Learning for Mean Field Games on Graph via Neural Operators, <br> <em style="color:thistle" align="left">Xu Chen, Shuo Liu and Xuan Di</em><br> 
+		      <a href="https://drive.google.com/file/d/1QuYppAmIvIiHaabOd8Vug0XFdDlb5Ddw/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1G9cObDrKtGlXWmgTxnpV7dg_8fInkzC5/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td> [#2]</td>
+              <td style="color:aqua" align="left">Innate-Values-driven Reinforcement Learning for Cooperative Multi-Agent Systems, <br> <em style="color:thistle" align="left">Qin Yang</em><br> 
+		      <a href="https://drive.google.com/file/d/1gDoK_wgDdvAqEgm9aCF-66PKomypiDTo/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/19pM6t3aR05ZGcK9vehmyZAA2PLLl8eBj/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#7]</td>
+              <td style="color:aqua" align="left">Exploratory Training: When Annotators Learn About Data, <br> <em style="color:thistle" align="left">Rajesh Shrestha, Omeed Habibelahian, Arash Termehchy and Paolo Papotti</em><br> 
+		      <a href="https://drive.google.com/file/d/12B_eKsHWBUDI_SgahC4BDBFCoZAC02eo/view?usp=sharing" target="_blank"> [Link to Paper]</a>
+		      <a href="https://drive.google.com/file/d/1e-C96Pkkoc252mhQSpaTkOYR2CLhr0fl/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#20]</td>
+              <td style="color:aqua" align="left">User Models and Bayesian Decision-Making for Human-in-the-Loop Problems, <br> <em style="color:thistle" align="left">Sammie Katt and Samuel Kaski</em><br> 
+		      <a href="https://drive.google.com/file/d/1-jEG5ZWV_tIop_Fx7VPm8CgGxUUhPgCR/view?usp=sharing" target="_blank"> [Link to Paper]</a>
+		      <a href="https://drive.google.com/file/d/1QdNfzF0UAq-zvLYij1XkVJAJebJ_pKXo/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#6]</td>
+              <td style="color:aqua" align="left">Multi-Robot Cooperative Navigation in Crowds: A Game-Theoretic Learning-Based Model Predictive Control Approach, <br> <em style="color:thistle" align="left">Viet-Anh Le, Vaishnav Tadiparthi, Behdad Chalaki, Hossein Nourkhiz Mahjoub, Jovin D'Sa, Ehsan Moradi-Pari and Andreas A. Malikopoulos</em><br> 
+		      <a href="https://drive.google.com/file/d/19vpfVqNGSiavL3bjF6tSA9CoBHNM5aDR/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1AIwHntI4YlnuMYClWXi4e0NLP-uNoRc5/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+            <tr>
+              <td>[#1]</td>
+              <td style="color:aqua" align="left">Edge Computing based Human-Robot Cognitive Fusion: A Medical Case Study in the Autism Spectrum Disorder Therapy, <br> <em style="color:thistle" align="left">Qin Yang</em><br> 
+		      <a href="https://drive.google.com/file/d/1yiFgKkKTB8K2nQMlsoUdvV3hVUOlkMzD/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1HiU1HERZV7P58W6ZF9wyU6Xx-TW6X2jU/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+		  
+            <tr>
+              <td>[#17]</td>
+              <td style="color:aqua" align="left">Exploiting Relational Planning and Task-Specific Abstractions for Multiagent Reinforcement Learning in Relational Domains, <br> <em style="color:thistle" align="left">Nikhilesh Prabhakar, Ranveer Singh, Prasad Tadepalli and Sriraam Natarajan</em><br> 
+		      <a href="https://drive.google.com/file/d/1pEQ3pr0rpW1SKtDjiejWgPtyS4gGbTMu/view?usp=sharing" target="_blank"> [Link to Paper]</a><a href="https://drive.google.com/file/d/1YjPziGMHqBPOjsP9r7jngiSvG18CJJxc/view?usp=sharing" target="_blank"> [Link to Poster]</a>
+	      </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </font>
+
+  </div>
+</section>
+
+<section id="team" class="page-section">
+  <div class="container">
+    <div class="heading text-center"> 
+      <!-- Heading -->
+      <h2>Organizing Committee</h2>
+    </div>
+    <!-- Team Member's Details -->
+    <div class="team-content">
+      <div class="row">
+	<div class="col-md-3 col-sm-6 col-xs-6"> 
+          <!-- Team Member -->
+          <div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/qy.jpg" alt="" /> </div>
+            <!-- Member Details -->
+            <h4><a href="https://www.bradley.edu/academic/departments/csis/faculty/profile.dot?id=912a95f79ce739e57d3f4c47bf63665f" target="blank">Qin Yang</a></h4>
+            <!-- Designation --> 
+            <span class="pos">Assistant Professor, <br /><a href="https://www.is3rlab.org/" target="blank">Intelligent Social Systems and Swarm Robotics Lab (IS<sup>3</sup>R)</a>, <br />Bradley University </span>
+          </div>
+        </div>
+	      
+        <div class="col-md-3 col-sm-6 col-xs-6"> 
+          <!-- Team Member -->
+          <div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/mt.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h4><a href="https://drmatttaylor.net/" target="blank">Matthew E. Taylor</a></h4>
+            <!-- Designation --> 
+            <span class="pos">Associate Professor, <br /><a href="https://irll.ca/" target="blank">Intelligent Robot Learning Lab</a>, <br />University of Alberta</span>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 col-xs-6"> 
+          <!-- Team Member -->
+          <div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/rl.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h4><a href="https://www.kent.edu/cae/rui-liu-ph-d" target="blank">Rui Liu</a></h4>
+            <!-- Designation --> 
+            <span class="pos">Assistant Professor, <br /><a href="https://ruiliurobotics.weebly.com/" target="blank">Cognitive Robotics and AI Lab (CRAI)</a>, <br />Kent State University </span>
+          </div>
+        </div>
+
+	<div class="col-md-3 col-sm-6 col-xs-6"> 
+          <!-- Team Member -->
+          <div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/tpy.png" alt="" /> </div>
+            <!-- Member Details -->
+            <h4><a href="https://tianpeiyang.github.io/" target="blank">Tianpei Yang</a></h4>
+            <!-- Designation --> 
+            <span class="pos">Postdoctoral Fellow, <br /><a href="https://irll.ca/" target="blank">Intelligent Robot Learning Lab</a>, <br />University of Alberta </span>
+          </div>
+        </div>
+	
+      </div>     
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+	
+<section id="contactUs" class="contact-parlex">
+  <div class="parlex-back">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center"> 
+          <!-- Heading -->
+          <h2>Submission</h2>
+	  <p style="font-size: 20px;" align="left">Submissions can contain relevant work in all possible stages, including recently published work, is under submission elsewhere, 
+	     was only recently finished, or is still ongoing. Authors of papers published or under submission elsewhere are encouraged to submit these papers or short versions (including abstracts) 
+	     to the workshop, educating other researchers about their work, as long as resubmissions are clearly labeled to avoid copyright violations.</p>
+          <p style="font-size: 20px;" align="left">We welcome contributions of both short (2-4 pages) and long papers (6-8 pages) related to our stated vision in the <a href="https://aaai.org/aaai-conference/" target="blank">AAAI 2024 proceedings format</a>. Position papers and surveys are also welcome.
+		  The contributions will be non-archival but will be hosted on our workshop website. All contributions will be peer reviewed (single-blind). </p>
+<!-- 	  <p style="font-size: 20px;" align="left">Contributions are to be submitted to <a href="https://easychair.org/conferences/?conf=aaai2024cmasdlworksh" target="blank">https://easychair.org/conferences/?conf=aaai2024cmasdlworksh</a>.</p> -->
+	  <p style="font-size: 20px;" align="left">Acceptance papers will be made publicly available on the workshop website. These non-archival papers and their corresponding posters will also remain available on this website after the workshop. The authors will retain copyright of their papers.</p>
+        </div>
+      </div>
+    </div>
+    <!--/.container--> 
+  </div>
+</section>
+<!--/.page-section-->
+<section class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center"> Copyright 2023 <strong>IS<sup>3</sup>R Lab</strong> | All Rights Reserved -- by <a href="https://www.is3rlab.org/" target="blank">is3rlab.org</a> </div>
+    </div>
+    <!-- / .row --> 
+  </div>
+</section>
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+
+<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
+<script src="js/modernizr-latest.js"></script> 
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script src="js/jquery.nav.js" type="text/javascript"></script> 
+<script src="js/jquery.fittext.js"></script> 
+<script src="js/waypoints.js"></script> 
+<script src="flexslider/jquery.flexslider.js"></script>
+<script src="js/custom.js" type="text/javascript"></script> 
+<script src="js/owl-carousel/owl.carousel.js"></script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+
+    Array.from(coll).forEach((col, i) => {
+      col.addEventListener("click", function () {
+        this.classList.toggle("active");
+        showHideRow(`hidden-content`, i);
+      });
+    });
+
+    function showHideRow(className, index) {
+      var content = document.getElementsByClassName(className)[index];
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+</script>
+</body>
+</html>
