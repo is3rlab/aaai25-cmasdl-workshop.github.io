@@ -198,7 +198,7 @@ a:hover {
 }
 .copyright {
 color: #6D6D6D;
-background: #000000;
+background: #001b37;
 padding: 20px 0;
 border-top: 1px solid #1D1D1D;
 }
@@ -898,7 +898,7 @@ body {
 	padding: 0;
 	width: 200px;
 	background: #ffffff;
-	box-shadow: 0 10px 10px -10px #000000;
+	box-shadow: 0 10px 10px -10px #001b37;
 }
 #navigation > li {
 	margin: 0;
@@ -907,7 +907,7 @@ body {
 }
 #navigation > li > a {
 	margin: 1px;
-	color: #000000;
+	color: #001b37;
 	background: #cccccc;
 	display: block;
 	padding: 5px;
