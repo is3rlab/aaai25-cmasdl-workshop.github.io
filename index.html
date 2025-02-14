@@ -679,31 +679,27 @@
               </tr>
               <tr>
                 <td style="color:maroon">4:15p-4:45p</td>
-<!--                 <td>
-                  <div class="collapsible">Kevin Leyton-Brown (UBC) - Topic: Modeling Nonstrategic Human Play in Games</div>
+                <td>
+                  <div class="collapsible">Kevin Leyton-Brown (UBC) - Topic: Human-Like Strategic Reasoning via ML</div>
                   <div class="hidden-content">
                     <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
                       <b>
                         <font size="">Abstract:</font>
                       </b>
-                        It is common to assume that players in a game will adopt Nash equilibrium strategies. 
-			However, experimental studies have demonstrated that Nash equilibrium is often a poor description of human players' behavior, 
-			even in unrepeated normal-form games. Nevertheless, human behavior in such settings is far from random. Drawing on data from real human play, 
-			the field of behavioral game theory has developed a variety of models that aim to capture these patterns.
-			This talk will survey over a decade of work on this topic, built around the core idea of treating behavioral game theory as a machine learning problem. 
-			It will touch on questions such as:
-				- Which human biases are most important to model in single-shot game theoretic settings?
-				- What loss function should be used to evaluate and fit behavioral models?
-				- What can be learned about examining the parameters of these models?
-				- How can richer models of nonstrategic play be leveraged to improve models of strategic agents?
-				- When does a description of nonstrategic behavior "cross the line" and deserve to be called strategic?
-				- How can advances in deep learning be used to yield stronger--albeit harder to interpret--models?
-			Finally, there has been much recent excitement about large language models such as GPT-4. 
-			Time permitting, the talk will conclude by describing how the economic rationality of such models can be assessed and 
-			presenting some initial experimental findings showing the extent to which these models replicate human-like cognitive biases.
+                        This talk will survey two recent projects at the intersection of modeling human-like reasoning in economic settings and modern machine learning.
+			First, models of human behavior in game-theoretic settings often distinguish between strategic behavior, in which a player both reasons about how 
+			    others will act and best responds to these beliefs, and "level-0" non-strategic behavior, in which they do not respond to explicit beliefs about others. 
+			    The talk will survey recent work that shows that the existing state-of-the-art method for predicting human play in games has an invalid level-0 specification 
+			    (i.e., it is capable of strategic reasoning); that fixes this via a novel neural network architecture; and that shows experimentally that the new architecture 
+			    is equally accurate for prediction while being more economically understandable.
+			Second, there is growing interest in using LLMs as economic agents, raising the question of when they should be trusted. The talk will describe an approach for 
+			    comprehensively benchmarking an LLM's ability to perform both strategic (e.g., game-theoretic) and non-strategic (e.g., microeconomic) decision-making, powered 
+			    by a novel LLM-assisted data generation protocol. We demonstrate the usefulness of our benchmark via a case study on 27 LLMs, ranging from small open-source models 
+			    to the current state of the art, showing cases where LLMs achieve reliable performance and where they still struggle, and highlighting some qualitative patterns in 
+			    the errors they make.
                     </p>
                   </div>
-                </td> -->
+                </td>
               </tr>
 <!--               <tr>
                 <td>5:10-5:15p</td>
